@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Hawaiian Volcanos - Kilauea Eruption, 2015</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ffffff;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: #3d3d3d;
+		}
+
+		section {
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			font-size: 2.5em;
+			/* The em unit. 3x the current size */
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: gray;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 0px auto;
+		}
+
+		.max-width-img {
+			width: 100%;
+		}
+
+		/* add custom style class here */
+	</style>
+</head>
+
+<body>
+
+	<div id='map'>
+		<!-- Add your custom HTML here -->
+		<img src="Low-Res_1200px.png" class="max-width-img" alt="Alternative description for screen readers">
+	</div>
+
+	<section>
+			<a href='High-Res_4000px.png' class="linkbox">Large version</a>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1>Hawaiian Volcanos - Kilauea Eruption, 2015</h1>
+
+		<!-- Add you information below -->
+		<h2>Authored by: Chris Peters, New Maps Plus - MAP 671 Course</h2>
+		<p>This map shows a lava flow (and lava tubes) from a 2015 eruption of Kilauea on the "Big Island" of Hawaii. The projection used is WGS 84, UTM zone 5N (EPSG:32605). 
+			
+		<br><br><h3>Summary</h3> From the <a href='https://volcanoes.usgs.gov/volcanoes/kilauea/'>United States Geological Survey, or USGS: </a><br><br>
+		
+		"Kīlauea is the youngest and southeastern most volcano on the Island of Hawai‘i. Topographically Kīlauea appears as only a bulge on the southeastern flank of Mauna Loa, and so for many years Kīlauea was thought to be a mere satellite of its giant neighbor, not a separate volcano. However, research over the past few decades shows clearly that Kīlauea has its own magma-plumbing system, extending to the surface from more than 60 km deep in the earth.
+		<br><br>In fact, the summit of Kīlauea lies on a curving line of volcanoes that includes Mauna Kea and Kohala and excludes Mauna Loa. In other words, Kīlauea is to Mauna Kea as Lō‘ihi is to Mauna Loa. Hawaiians used the word Kīlauea only for the summit caldera, but earth scientists and, over time, popular usage have extended the name to include the entire volcano.
+		<br><br>Kīlauea is the home of Pele, the Hawaiian volcano goddess. Hawaiian chants and oral traditions tell in veiled form of many eruptions fomented by an angry Pele before the first European, the missionary Rev. William Ellis, saw the summit in 1823. The caldera was the site of nearly continuous activity during the 19th century and the early part of the 20th century. Kīlauea ranks among the world's most active volcanoes and may even top the list.
+		<br><br>Since 1952, Kīlauea has erupted 34 times. From 1983 to 2018 eruptive activity was nearly continuous along the volcano's East Rift Zone. At the summit, a vent within Halema‘uma‘u hosted an active lava pond and vigorous gas plume from 2008 to 2018. In 2018, the decades-long continuous activity on the East Rift Zone ended, and the summit lava lake drained following an intrusion into, and eruption from, Kīlauea's lower East Rift Zone. That was Kīlauea's largest eruption in at least 200 years and was accompanied by the largest summit collapse for the same time period.
+		"
+			
+
+		<br><br>For more information on volcanoes and the hazards they present, check out the <a href = 'https://volcanoes.usgs.gov/vhp/about.html'>Volcano Hazards Program</a> from the USGS. 
+
+			Additional resources on volcanoes and lava flow mapping can be found at:
+		<ul>
+			<li>Mapping lava flows based on <a href="https://geoetc.com/mapping-lava-flows/">relative age.</a></li>
+			<li>University of Hawaii - Maui College <a href="https://maui.hawaii.edu/gis/2015/02/03/lava-flow-mapping/">lava flow mapping.</a></li>
+			<li>And for a <a href ='https://blogs.ei.columbia.edu/2015/09/09/from-the-field-mapping-lava-flows-in-iceland/'>cooler</a> take on a hot topic. (Pardon the pun.)</li>
+			<li>Just Good ol' fashioned <a href=https://www.jpl.nasa.gov/edu/teach/activity/lava-layering-making-and-mapping-a-volcano/>fun!</a></li>
+
+		</ul>	
+
+		I had some difficulty in obtaining the contours and hydrographic data directly from USGS (an unknown technical glitch in the map products search meant no datasets were available). Luckily, the state of Hawaii maintains
+		many of these same layers for all of its islands - so most of map data comes from the State of Hawaii Office of Planning's<a href='http://planning.hawaii.gov/gis/download-gis-data/'> GIS Download page.</a> 
+
+		<h3>Data sources:</h3> 
+			
+		<ul>
+			<!-- List data sources and a brief description -->
+			<li>Satellite Imagery <a href="https://github.com/CPE3">ESRI satellite basemap</a> (within QGIS).</li>
+			<li>Hillshade TIF<a href="http://files.hawaii.gov/dbedt/op/gis/data/hillshades.tif.txt">metadata. This added a lot to the basemap, especially with an inverted color gradient (white to black) and "dodged" blending mode.</a></li>
+			<li>Elevation contours <a href="http://files.hawaii.gov/dbedt/op/gis/data/cntrs100.pdf">metadata. Ultimately the 100-ft intervals were too dense, and for both aesthetics and performance,
+			I set a 500-ft interval instead. A separate 500-ft interval file is available for download, but I worked with the original download. Maybe next time...</a></li>
+			<li>National Hydrography Dataset (NHD) Waterbodies <a href='http://files.hawaii.gov/dbedt/op/gis/data/nhd.pdf'>metadata.</a>There aren't that many "larger" inland waterbodies on the Big Island, but they're quite numerous. In researching this map, I learned that one of the Hawaii's oldest freshwater inland lakes (~400 years old) was destroyed during a different eruption at a different volcano!</a></li>
+			<li>National Hydrography Dataset (NHD) Flowlines <a href='http://files.hawaii.gov/dbedt/op/gis/data/nhd.pdf'>metadata.</a>These are the streams, etc. in the state, but I don't have a firm understanding of the different layers offered. Without a Stahler stream rank attribute (from one of the earliest labs), there's not a good way to establish a visual hierarchy here. Lesson learned.</li>
+			<li>Lava Tube <a href='https://www.sciencebase.gov/catalog/item/5cdd9871e4b029273746360f'>data and metadata available here.</a></li>
+			<li>Lava Flow <a href='https://newmapsplus.uky.edu/explore-new-maps'>data and metadata available here.</a></li>
+
+			
+
+	
+		</ul>
+			
+	
+	
+		</p>
+
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my NMP course projects on GitHub: <a href="https://github.com/CPE3">Chris Peters</a></li>
+			<li>Follow the program on Twitter: <a href="https://twitter.com/NewMapsPlus">@NewMapsPlus</a></li>
+			<li>Visit the program's website: <a href='https://newmapsplus.uky.edu/explore-new-maps'>New Maps Plus</a></li>
+
+		</ul>
+		
+		<hr>
+        <!-- <h4><a href="https://uky-gis.github.io">UKY GIS and Mapping</a></h4> -->
+        <a href="https://uky-gis.github.io">
+            <img src="https://uky-gis.github.io/graphics/logo-color-400px.png" alt="University of Kentucky Geography"></a> 
+            <a href="https://newmapsplus.as.uky.edu">
+                <img src="https://newmapsplus.as.uky.edu/sites/default/files/NMP%20Logo.png" alt="New Maps Plus"></a>
+	</section>
+
+</body>
+
+</html>
